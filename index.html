@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nitul Patel | Full-Stack WordPress Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+    <script>
+      // GitHub Pages SPA redirect
+      (function() {
+        if (window.location.pathname.includes('/?/')) {
+          const path = window.location.pathname.split('/?/')[1] || '';
+          window.history.replaceState(null, null, window.location.origin + window.location.pathname.split('/?/')[0] + (path ? '/' + path : '') + window.location.search);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
